@@ -1,0 +1,10 @@
+Dockerfile
+.dockerignore
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.zip
+README.md

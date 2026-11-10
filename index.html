@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0b11">
+
+    <!-- ✏️ EDIT: the text shown on the browser tab (your name) -->
+    <title>AmirHossein Samavat - Portfolio</title>
+
+    <!-- ✏️ EDIT: short description used by Google and when the link is shared -->
+    <meta name="description" content="Unity / C# Game Developer - portfolio of mobile games and projects.">
+
+    <!-- ✏️ EDIT (optional): link-preview card for LinkedIn, WhatsApp, X, etc.
+         Replace https://your-domain.com/ with the address where the site will live,
+         and replace img/og-image.jpg with a 1200x630 image. -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="AmirHossein Samavat - Portfolio">
+    <meta property="og:description" content="Unity / C# Game Developer - portfolio of mobile games and projects.">
+    <meta property="og:image" content="https://your-domain.com/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ✏️ EDIT: tab icon. Replace img/favicon.png (64x64) and img/apple-touch-icon.png (180x180)
+         with small square crops of YOUR photo so your photo shows on the browser tab. -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Libraries (stored locally in /vendor so the site works offline and inside Docker) -->
+    <link rel="stylesheet" href="vendor/fonts/fonts.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+    <!-- Main stylesheet (colours are at the top of this file) -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+
+    <!--==========================
+        Header (fixed, semi-transparent navigation bar)
+    ============================-->
+    <header id="header">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div id="logo">
+                <!-- ✏️ EDIT: your name in the top-left corner of the bar -->
+                <h1><a href="#about" class="scrollto">AmirHossein Samavat</a></h1>
+            </div>
+
+            <!-- Desktop menu (on mobile this is copied into a slide-in menu by js/main.js) -->
+            <nav id="nav-menu-container" aria-label="Main">
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" id="mobile-nav-toggle" aria-label="Open menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!--==========================
+            About Me Section (top of the page)
+        ============================-->
+        <section id="about">
+            <div class="container reveal">
+
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="row align-items-center about-row">
+
+                    <!-- Photo + name -->
+                    <div class="col-lg-4 text-center about-photo-col">
+                        <!-- ✏️ EDIT: replace img/profile.jpg with your photo (square, at least 600x600 px) -->
+                        <img src="img/profile.jpg" alt="Photo of AmirHossein Samavat" class="profile-photo">
+
+                        <!-- ✏️ EDIT: your name shown under the photo (the <span> part is coloured) -->
+                        <h1 class="about-name">AmirHossein  <span>Samavat</span></h1>
+
+                        <!-- ✏️ EDIT: job titles typed one after another under your name (comma separated).
+                             Delete this whole <p> if you don't want it. -->
+                        <p class="about-role" data-roles="Mobile Game Developer,Unity Developer,AI & Game Developer">
+                            <span class="typed-text"></span><span class="typed-cursor">|</span>
+                        </p>
+                    </div>
+
+                    <!-- Description + buttons -->
+                    <div class="col-lg-8 about-text-col">
+                        <p>I'm a <b>Unity / C# game developer</b> with several years of experience building mobile games, and I hold a
+                            <b>Master's degree in Artificial Intelligence</b>, which I completed with Distinction. I've worked across genres,
+                            including match-3, puzzle, card, idle, multiplayer and action games, and my work has shipped on both <b>Android and
+                                iOS</b>.</p>
+                        <p>At studios such as Medrick, Baxter and Epicade, I've built LiveOps events, online multiplayer systems with Photon
+                            and FishNet, and iOS ports. I've also optimised game performance and led a development team as Scrum Master. I'm
+                            especially interested in <b>AI and cognitive games</b>: both of my degree projects were cognitive games, including
+                            research tools for assessing children's memory and attention.</p>
+                        <p>I currently work at a game studio and take on freelance projects. I work well on my own and in teams, and I'm always
+                            happy to talk about new projects and opportunities. Feel free to reach out!</p>
+
+
+                        <div class="about-buttons">
+                            <!-- ✏️ EDIT: put your CV at assets/cv/CV.pdf (same name), or change href below.
+                                 "download" = the name the file gets on the visitor's device. -->
+                            <a href="assets/cv/CV.pdf" download="AmirHossein -Samavat-CV.pdf" class="btn btn-lg btn-outline">
+                                <i class="fa-solid fa-download"></i> Download CV
+                            </a>
+                            <!-- Scrolls down to the Contact section -->
+                            <a href="#contact" class="btn btn-lg btn-outline scrollto">
+                                <i class="fa-solid fa-envelope"></i> Contact Me
+                            </a>
+
+                            <!-- ✏️ OPTIONAL: more buttons. Copy one of the lines below out of the comment to use it.
+                            <a href="https://github.com/ngnma" target="_blank" rel="noopener" class="btn btn-lg btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/AmirHossein -Samavat-3886b61b4" target="_blank" rel="noopener" class="btn btn-lg btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+            Portfolio Section
+            The project cards and pop-ups are created automatically from js/projects.js
+            ✏️ EDIT your projects in js/projects.js - NOT here.
+        ============================-->
+        <section id="portfolio">
+            <div class="container reveal">
+                <div class="section-header text-center">
+                    <h2>Portfolio</h2>
+                    <div class="portfolio-filters">
+                        <button type="button" class="btn active portfolio-filter" data-filter=".portfolio-featured">All</button>
+                        <button type="button" class="btn portfolio-filter" data-filter=".portfolio-personal">Personal Projects</button>
+                        <button type="button" class="btn portfolio-filter" data-filter=".portfolio-team">Team Projects</button>
+                    </div>
+                </div>
+
+                <div class="grid" id="portfolio-grid">
+                    <!-- cards are inserted here by js/main.js -->
+                </div>
+                <noscript><p class="text-center">Please enable JavaScript to see the projects.</p></noscript>
+            </div>
+
+            <!-- "Show more" arrow: only appears on the "All" tab when some projects have featured: false -->
+            <div class="text-center more-wrap">
+                <button type="button" class="btn portfolio-filter more-button" data-filter=".portfolio-item" aria-label="Show all projects">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <!--==========================
+            Experience Section
+        ============================-->
+        <section id="experience" class="section-with-bg">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                </div>
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab-professional" data-bs-toggle="tab" data-bs-target="#exp-professional"
+                            type="button" role="tab" aria-controls="exp-professional" aria-selected="true">Professional</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-education" data-bs-toggle="tab" data-bs-target="#exp-education"
+                            type="button" role="tab" aria-controls="exp-education" aria-selected="false">Education</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <!-- ========== PROFESSIONAL ==========
+                         ✏️ EDIT: one <div class="experience-item"> block per job.
+                         To add a job: copy a whole block (from <div class="experience-item"> to its closing </div>)
+                         and paste it where you want it. To remove one: delete its whole block.
+                         Logos go in img/experience/ (square PNG with transparent background works best). -->
+                    <div class="tab-pane fade show active" id="exp-professional" role="tabpanel" aria-labelledby="tab-professional">
+
+                        <!-- Job 1 -->
+                        <div class="experience-item">
+                            <div class="experience-image">
+                                <img src="img/experience/medrick.png" alt="Medrick Game Studio logo">
+                            </div>
+                            <div class="experience-description">
+                                <h4>Medrick Game Studio<span>Tehran , Iran</span></h4>
+                                <p class="experience-date"><i class="fa-regular fa-calendar time-icon"></i>Oct 2025 - Present</p>
+                                <p>Senior Game Developer</p>
+                                <div class="experience-highlights">
+                                    <h5>Responsibilities / Achievements</h5>
+                                        <ul>
+                                            <li>Worked on <i>Golmorad</i> for 6 months, developing and implementing 6 in-game events.</li>
+                                            <li>Implemented permanent events (such as Swamp Quest) alongside the game's other events.</li>
+                                            <li>Maintained and managed the project's early builds.</li>
+                                            <li>Prepared and tested the first iOS builds of the company's projects.</li>
+                                            <li>Automated the localisation workflow using n8n.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div class="experience-item">
+                            <div class="experience-image">
+                                <img src="img/experience/baxter.png" alt="Baxter Game Studio logo">
+                            </div>
+                            <div class="experience-description">
+                                <h4>Baxter Game Studio<span>Remote , UK</span></h4>
+                                <p class="experience-date"><i class="fa-regular fa-calendar time-icon"></i>Feb 2024 - Apr 2025</p>
+                                <p>Junior Game Developer</p>
+                                <div class="experience-highlights">
+                                    <h5>Responsibilities / Achievements</h5>
+                                        <ul>
+                                            <li>Developed a game from scratch to release and managed each stage of its development.</li>
+                                            <li>Optimised game performance by analysing benchmarks, managing memory and reducing GC allocations.</li>
+                                            <li>Cut unnecessary LINQ usage and runtime memory allocations.</li>
+                                            <li>Optimised TextMeshPro components, switching dynamic text to static where appropriate.</li>
+                                            <li>Fixed GPU-related frame drops by optimising visual effects and implementing particle systems.</li>
+                                            <li>Optimised the game's ad system.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job 3 -->
+                        <div class="experience-item">
+                            <div class="experience-image">
+                                <img src="img/experience/epicade.png" alt="Epicade Game Studio logo">
+                            </div>
+                            <div class="experience-description">
+                                <h4>Epicade<span>Tehran, Iran</span></h4>
+                                <p class="experience-date"><i class="fa-regular fa-calendar time-icon"></i>Dec 2022 - Dec 2023</p>
+                                <p>Junior Game Developer</p>
+                                <div class="experience-highlights">
+                                    <h5>Responsibilities / Achievements</h5>
+                                        <ul>
+                                            <li>Developed core features for a 2D mobile game.</li>
+                                            <li>Implemented the infrastructure for online multiplayer.</li>
+                                            <li>Found and fixed in-game bugs to keep the game stable and polished.</li>
+                                            <li>Led the game development team as Scrum Master, running sprints and coordinating day-to-day work.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job 4 -->
+                        <div class="experience-item">
+                            <div class="experience-image">
+                                <img src="img/experience/IUST.png" alt="IUST logo">
+                            </div>
+                            <div class="experience-description">
+                                <h4>IUST Game Hub <span>Tehran, Iran</span></h4>
+                                <p class="experience-date"><i class="fa-regular fa-calendar time-icon"></i>Feb 2022 - Oct 2022</p>
+                                <p>Intern Game Developer</p>
+                                <div class="experience-highlights">
+                                    <h5>Responsibilities / Achievements</h5>
+                                    <ul>
+                                        <li>Leading a selected team in a game development competition-sponsored by Hamrah-e Aval—for the game <i>Battle Cry</i>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End of Professional -->
+
+                    <!-- ========== EDUCATION ==========
+                         ✏️ EDIT: one <div class="experience-item"> block per degree (same rules as above). -->
+                    <div class="tab-pane fade" id="exp-education" role="tabpanel" aria-labelledby="tab-education">
+
+                        <!-- Degree 1 -->
+                        <div class="experience-item">
+                            <div class="experience-image">
+                                <img src="img/experience/UT.png" alt="University of Tehran logo">
+                            </div>
+                            <div class="experience-description">
+                                <h4>University of Tehran <span>Tehran , Iran</span></h4>
+                                <p class="experience-date"><i class="fa-regular fa-calendar time-icon"></i>Sep 2024 - Dec 2026 (Expected)</p>
+                                <p><b>MSc Artificial Intelligence</b></p>
+                                <p>Key modules: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision</p>
+                                <p>Final project: developed a research-based cognitive game in Unity that measures memory and attention in children,
+                                    with logging of scores and response times for analysis.</p>
+                                <!-- Optional award / grade line (delete if not needed) -->
+                                <p class="experience-date"><i class="fa-solid fa-award time-icon"></i>Current GPA: 19 / 20</p>
+                                <div class="experience-highlights">
+                                    <h5>Responsibilities / Achievements</h5>
+                                    <ul>
+                                        <li>Active member of the Game and Robotics Laboratory.</li>
+                                        <li>Developed several projects that use game-based cognitive approaches for detecting disorders.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Degree 2 -->
+                        <div class="experience-item">
+                            <div class="experience-image">
+                                <img src="img/experience/IUST.png" alt="IUST University logo">
+                            </div>
+                            <div class="experience-description">
+                                <h4>Iran University of Science and Technology <span>Tehran, Iran</span></h4>
+                                <p class="experience-date"><i class="fa-regular fa-calendar time-icon"></i>Sep 2019 - Aug 2023</p>
+                                <p><b>BSc Computer Engineering</b></p>
+                                <p>Key modules: Data Structures &amp; Algorithms, Object-Oriented Programming, Software Engineering, Computer Graphics,
+                                    Artificial Intelligence</p>
+                                <p>Final project: developed a cognitive game for children with developmental disorders.</p>
+                                <p class="experience-date"><i class="fa-solid fa-award time-icon"></i>GPA 17.21 / 20</p>
+                                <div class="experience-highlights">
+                                    <h5>Responsibilities / Achievements</h5>
+                                    <ul>
+                                        <li>Active member of the university's Game Hub.</li>
+                                        <li>Part of the team that won the "Selected Team" title at the Corey Games game development competition, sponsored
+                                            by Hamrah-e Aval, for the game <i>Battle Cry</i>.</li>
+                                        <li>Developed a cognitive game for children with developmental disorders as my final thesis project.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End of Education -->
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+            Skills Section: Software / Languages and Frameworks / Skills
+        ============================-->
+        <section id="skills">
+            <div class="container reveal">
+                <div class="section-header">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-5 col-lg-8 offset-lg-2 offset-xl-0">
+
+                        <!-- ✏️ EDIT: Software. One <div class="tool-item"> per tool.
+                             Icons live in img/skills/ (SVG or PNG, square). Free icons: https://devicon.dev -->
+                        <div class="tools">
+                            <div class="tool-header">
+                                <h6><b>Software</b></h6>
+                            </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/unity.svg" alt=""></div>
+                                    <div class="tool-title">Unity</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/visualstudio.svg" alt=""></div>
+                                    <div class="tool-title">Visual Studio</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/rider.svg" alt=""></div>
+                                    <div class="tool-title">Rider</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/git.svg" alt=""></div>
+                                    <div class="tool-title">Git</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/xcode.svg" alt=""></div>
+                                    <div class="tool-title">Xcode</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/androidstudio.svg" alt=""></div>
+                                    <div class="tool-title">Android Studio</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/spine.png" alt=""></div>
+                                    <div class="tool-title">Spine</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/gameanalytics.png" alt=""></div>
+                                    <div class="tool-title">GameAnalytics</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/n8n.png" alt=""></div>
+                                    <div class="tool-title">n8n</div>
+                                </div>
+                        </div>
+
+                        <br><br>
+
+                        <!-- ✏️ EDIT: Languages and Frameworks (same format as Software) -->
+                        <div class="tools">
+                            <div class="tool-header">
+                                <h6><b>Languages and Frameworks</b></h6>
+                            </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/csharp.svg" alt=""></div>
+                                    <div class="tool-title">C#</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/python.svg" alt=""></div>
+                                    <div class="tool-title">Python</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/photon.png" alt=""></div>
+                                    <div class="tool-title">Photon PUN</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/fishnet.png" alt=""></div>
+                                    <div class="tool-title">FishNet</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/unity.svg" alt=""></div>
+                                    <div class="tool-title">Addressables</div>
+                                </div>
+                                <div class="tool-item">
+                                    <div class="tool-image"><img src="img/skills/dotnet.svg" alt=""></div>
+                                    <div class="tool-title">.NET</div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 offset-xl-1 col-lg-8 offset-lg-2">
+                        <!-- ✏️ EDIT: Skills. One <div class="skill-item"> per skill.
+                             The icon is a Font Awesome class - search free icons at https://fontawesome.com/search?ic=free
+                             e.g. <i class="fa-solid fa-brain"></i> -->
+                        <div class="skills">
+                            <div class="skill-title">
+                                <h6><b>Skills</b></h6>
+                            </div>
+                                <div class="skill-item"><i class="fa-solid fa-gamepad"></i><span>Gameplay Programming</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-network-wired"></i><span>Online Multiplayer</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-calendar-check"></i><span>LiveOps &amp; In-Game Events</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-gauge-high"></i><span>Performance Optimisation</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-mobile-screen"></i><span>iOS &amp; Android Builds</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-sitemap"></i><span>Architecture &amp; Design Patterns</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-chart-line"></i><span>Analytics Integration</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-rectangle-ad"></i><span>Ad Integration</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-language"></i><span>Localisation</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-bone"></i><span>2D Animation (Spine &amp; IK)</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-brain"></i><span>Cognitive &amp; Research Games</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-robot"></i><span>Artificial Intelligence</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-bug"></i><span>Debugging &amp; Dev Tools</span></div>
+                                <div class="skill-item"><i class="fa-solid fa-users"></i><span>Team Leadership (Scrum)</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+            Contact Section
+        ============================-->
+        <section id="contact">
+            <div class="container reveal">
+
+                <div class="section-header">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-lines">
+                    <!-- ✏️ EDIT: your email - change it in BOTH places (inside href="mailto:..." and the visible text) -->
+                    <p>Leave me a message at <a href="mailto:samavatamirhosein@gmail.com">samavatamirhosein@gmail.com</a></p>
+
+                    <p class="contact-or">Or</p>
+
+                    <!-- ✏️ EDIT: your phone number - change it in BOTH places.
+                         In href="tel:..." write it with the country code and NO spaces, e.g. tel:+447123456789 -->
+                    <p>Contact me at <a href="tel:+989912580806">+989912580806</a></p>
+                </div>
+
+                <div class="social-links">
+                    <!-- ✏️ EDIT: your profile links -->
+                    <a href="https://github.com/amirsmvt" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amirhossein-samavat-04a995195" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <!-- ✏️ OPTIONAL: a third button, e.g. Kaggle / X / Medium. Copy out of the comment to use.
+                    <a href="https://www.kaggle.com/your-username" target="_blank" rel="noopener" aria-label="Kaggle" title="Kaggle">
+                        <i class="fa-brands fa-kaggle"></i>
+                    </a>
+                    -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--==========================
+        Footer
+    ============================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                <!-- ✏️ EDIT: your name (the year updates automatically) -->
+                &copy; Copyright <strong>AmirHossein Samavat</strong> <span id="year"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!--==========================
+        Project pop-up (filled automatically from js/projects.js)
+    ============================-->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true" aria-label="Project details">
+        <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="portfolioModalBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <!-- ✏️ Your projects (cards + pop-ups) are defined in this file -->
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

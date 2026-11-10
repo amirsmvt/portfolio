@@ -1,0 +1,15 @@
+/* Self-hosted Google Fonts (Open Sans + Raleway, latin subset) via @fontsource - OFL licence */
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-display:swap;src:url('open-sans-latin-300-normal.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:italic;font-weight:300;font-display:swap;src:url('open-sans-latin-300-italic.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:url('open-sans-latin-400-normal.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-display:swap;src:url('open-sans-latin-400-italic.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:url('open-sans-latin-600-normal.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:italic;font-weight:600;font-display:swap;src:url('open-sans-latin-600-italic.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:url('open-sans-latin-700-normal.woff2') format('woff2');}
+@font-face{font-family:'Open Sans';font-style:italic;font-weight:700;font-display:swap;src:url('open-sans-latin-700-italic.woff2') format('woff2');}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:300;font-display:swap;src:url('raleway-latin-300-normal.woff2') format('woff2');}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:url('raleway-latin-400-normal.woff2') format('woff2');}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:url('raleway-latin-500-normal.woff2') format('woff2');}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:url('raleway-latin-600-normal.woff2') format('woff2');}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:url('raleway-latin-700-normal.woff2') format('woff2');}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:800;font-display:swap;src:url('raleway-latin-800-normal.woff2') format('woff2');}
