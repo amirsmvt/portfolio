@@ -303,7 +303,7 @@ const PROJECTS = [
     subtitle: "Top-Down Survival Action",
     thumbnail: "img/portfolio/project-8/gallery/1.png",
     media: [
-      { type: "video", src: "img/portfolio/project-8/TopDownDemo.MOV" },
+      { type: "video", src: "img/portfolio/project-8/TopDownDemo.mp4" },
       { type: "image", src: "img/portfolio/project-8/gallery/1.png" },
       { type: "image", src: "img/portfolio/project-8/gallery/2.png" },
     ],
@@ -363,7 +363,7 @@ const PROJECTS = [
     subtitle: "Epicade Game Studio · Unity · FishNet",
     thumbnail: "img/portfolio/project-10/battleCry.png",
     media: [
-      { type: "video", src: "img/portfolio/project-10/Epicade_Portfolio.MOV" },
+      { type: "video", src: "img/portfolio/project-10/Epicade_Portfolio.mp4" },
       { type: "image", src: "img/portfolio/project-10/gallery/1.png" },
       { type: "image", src: "img/portfolio/project-10/gallery/2.png" },
       { type: "image", src: "img/portfolio/project-10/gallery/3.png" },
