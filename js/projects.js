@@ -361,7 +361,7 @@ const PROJECTS = [
     featured: true,
     title: "Battle Cry",
     subtitle: "Epicade Game Studio · Unity · FishNet",
-    thumbnail: "img/portfolio/project-10/battleCry.png",
+    thumbnail: "img/portfolio/project-10/BattleCry.png",
     media: [
       { type: "video", src: "img/portfolio/project-10/Epicade_Portfolio.mp4" },
       { type: "image", src: "img/portfolio/project-10/gallery/1.png" },
