@@ -67,7 +67,7 @@ portfolio/
 ├── js/
 │   ├── projects.js            ← ✏️ YOUR PROJECTS (cards + pop-ups)
 │   └── main.js                ← behaviour (no need to edit)
-├── assets/cv/CV.pdf           ← ✏️ your CV
+├── assets/cv/cv.pdf           ← ✏️ your CV
 ├── img/
 │   ├── profile.jpg            ← ✏️ your photo
 │   ├── favicon.png            ← ✏️ browser-tab icon (64×64)
@@ -119,7 +119,7 @@ File: `index.html`, in the `About Me Section` block.
 | Name under the photo | `<h1 class="about-name">Negin <span>Mashayekhi</span></h1>`. The `<span>` part is shown in the accent colour |
 | Typed job titles | `data-roles="Data Analyst,Machine Learning Engineer,AI Engineer"`, comma-separated. Typing stops on the **last** one. Delete that `<p>` if you don't want it |
 | Description | The three `<p>...</p>` paragraphs. Add or remove paragraphs freely. `<b>word</b>` = bold |
-| **Download CV** | Put your PDF at **`assets/cv/CV.pdf`** (overwrite the placeholder). `download="Negin-Mashayekhi-CV.pdf"` is the file name visitors get |
+| **Download CV** | Put your PDF at **`assets/cv/cv.pdf`** (overwrite the placeholder). `download="Negin-Mashayekhi-CV.pdf"` is the file name visitors get |
 | **Contact Me** | Already scrolls to the Contact section, so nothing to change |
 | Extra buttons (optional) | GitHub / LinkedIn button templates are in a comment right below. Move them out of the comment to use them |
 
@@ -238,7 +238,7 @@ File: `css/style.css`, in the `:root { ... }` block at the top. For example, `--
 
 - [ ] `img/profile.jpg`: your photo
 - [ ] `img/favicon.png` + `img/apple-touch-icon.png`: small crops of your photo
-- [ ] `assets/cv/CV.pdf`: your CV
+- [ ] `assets/cv/cv.pdf`: your CV
 - [ ] About Me paragraphs and typed job titles (`index.html`)
 - [ ] `js/projects.js`: titles, subtitles, media, descriptions, links
 - [ ] `img/portfolio/...`: thumbnails, videos, gallery photos (delete unused `project-*` folders)
